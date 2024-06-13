@@ -23,6 +23,6 @@ O arquivo CSS (`styles.css`) define os estilos das imagens e do layout de grade.
 
 ## Autor
 
-Este projeto foi criado por Vania Godoy. Você pode entrar em contato através do [GitHub](https://github.com/VaniaGodoy) para mais informações ou para discutir possíveis colaborações.
+Este projeto foi criado por Vania Godoy. Você pode entrar em contato através do [GitHub](https://github.com/VaniaGodoy).
 
 ######
