@@ -1,0 +1,52 @@
+/* Configurações Gerais do Body */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes usada no corpo da página. Neste caso, Arial e se não estiver disponível, sans-serif*/
+    margin: 0; /* Remove qualquer margem padrão do elemento body */
+    padding: 0; /* Remove qualquer padding (preenchimento interno) padrão do elemento body*/
+    display: flex; /* Define o body como um container flexível. Isso permite centralizar seu conteúdo de forma flexível */
+    justify-content: center; /* Alinha horizontalmente o conteúdo do container flexível ao centro */
+    align-items: center; /* Alinha verticalmente o conteúdo do container flexível ao centro */
+    height: 100vh; /* Define a altura do body como 100% da altura da janela de visualização */
+    background-color: #020b32; /* Define a cor de fundo do body */
+}
+
+/* Configurações da Grade (photo-album) */
+.photo-album {
+    display: grid; /* Define o container .photo-album como uma grade CSS, permitindo a criação de layouts baseados em grade */
+    grid-template-columns: repeat(6, 1fr); /* Significa que queremos repetir a definição 1fr seis vezes. Equivalente a escrever 1fr 1fr 1fr 1fr 1fr 1fr, mas de forma mais compacta e legível. */
+    grid-auto-rows: 140px; /*Define a altura base de cada linha da grade como 140 pixels*/
+    grid-gap: 10px; /* Define o espaço entre as células da grade (tanto entre as colunas quanto entre as linhas) como 10 pixels */
+    width: 90%; /* Define a largura da grade como 90% da largura do contêiner pai */
+    max-width: 1200px; /* Define a largura máxima da grade como 1200 pixels */
+    margin: auto; /* Centraliza o container .photo-album horizontalmente */
+}
+
+/* Estilização das Imagens */
+.photo-album img {
+    width: 100%; /* Faz com que a imagem ocupe 100% da largura da célula da grade */
+    height: 100%; /* Faz com que a imagem ocupe 100% da altura da célula da grade */
+    object-fit: cover; /* Faz com que a imagem preencha a célula da grade, cortando a imagem se necessário, para cobrir completamente a área */
+    border-radius: 5px; /* Adiciona cantos arredondados às imagens com um raio de 5 pixels */   
+}
+
+/* Cada classe .imgX define a posição e o tamanho da imagem na grade usando grid-area: row-start / column-start / row-end / column-end; onde row-start e column-start são os números da linha e coluna onde a imagem começa, e row-end e column-end são onde a imagem termina.*/
+
+.img1 { grid-area: 1 / 1 / 3 / 3; border: 4px solid #57bd0e;} /* ocupa 2 linhas e 2 colunas, começando na linha 1, coluna 1 e terminando na linha 3, coluna 3 e uma borda solida colorida */
+
+.img2 { grid-area: 1 / 3 / 2 / 5; border: 4px solid #f0a88e; } /* ocupa 1 linha e 2 colunas, começando na linha 1, coluna 3 e terminando na linha 2, coluna 5 e uma borda solida colorida*/
+
+.img3 { grid-area: 1 / 5 / 3 / 7; border: 4px solid #5305cf; } /* ocupa 2 linhas e 2 colunas, começando na linha 1, coluna 5 e terminando na linha 3, coluna 7 e uma borda solida colorida*/
+
+.img4 { grid-area: 2 / 3 / 4 / 5; border: 4px solid #e7f12b;} /* ocupa 2 linhas e 2 colunas, começando na linha 2, coluna 3 e terminando na linha 4, coluna 5 e uma borda solida colorida */
+
+.img5 { grid-area: 3 / 5 / 5 / 7; border: 4px solid #bd0e7d;} /* ocupa 2 linhas e 2 colunas, começando na linha 3, coluna 5 e terminando na linha 5, coluna 7 e uma borda solida colorida*/
+
+.img6 { grid-area: 3 / 1 / 4 / 3; border: 4px solid #0fcaef;} /* ocupa 1 linha e 2 colunas, começando na linha 3, coluna 1 e terminando na linha 4, coluna 3 e uma borda solida colorida*/
+
+.img7 { grid-area: 4 / 1 / 6 / 3; border: 4px solid #e2b309;} /* ocupa 2 linhas e 2 colunas, começando na linha 4, coluna 1 e terminando na linha 6, coluna 3 e uma borda solida colorida*/
+
+.img8 { grid-area: 4 / 3 / 6 / 5; border: 4px solid #f3151d; } /* ocupa 2 linhas e 2 colunas, começando na linha 4, coluna 3 e terminando na linha 6, coluna 5 e uma borda solida colorida*/
+
+.img9 { grid-area: 5 / 5 / 6 / 7; border: 4px solid #c293c8;} /* ocupa 1 linha e 2 colunas, começando na linha 5, coluna 5 e terminando na linha 6, coluna 7 e uma borda solida colorida*/
+
+.img10 { grid-area: 6 / 1 / 7 / 7; border: 4px solid #8a5307;} /* ocupa 1 linha e 6 colunas, começando na linha 6, coluna 1 e terminando na linha 7, coluna 7 e uma borda solida colorida*/
